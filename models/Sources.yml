@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: src_testdb
+    description: "test database as source"
+    database: TEST_DB
+    schema: TEST_SC
+    tables:
+      - name: sales
+        columns:
+          - name: CUSTOMER_NAME
+          - name: ORDER_DATE
+      - name: customers
+      - name: items
