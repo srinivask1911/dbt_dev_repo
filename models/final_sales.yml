@@ -1,0 +1,18 @@
+models:
+  - name: final_sales
+    columns:
+      - name: order_date
+        tests:
+          - not_null
+          - unique
+      
+      - name: items
+        tests:
+          - accepted_values:
+              values: ['Shirt','Pant','Tshirt','Shoe']
+      
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('model_name')
+              field: field_name

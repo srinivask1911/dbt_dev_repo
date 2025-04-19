@@ -1,1 +1,1 @@
-{{ clone_db_macro() }}
+{{ uppercase_columns(['first_name', 'last_name','city','address']) }}

@@ -1,0 +1,1 @@
+select * from {{ ref("final_sales") }} where order_date is null
