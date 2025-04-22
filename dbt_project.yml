@@ -44,4 +44,6 @@ models:
       database: T01
       schema: TS02
       +materialized: table
+      pre-hook: "set timezone = 'UTC';"
+    
 

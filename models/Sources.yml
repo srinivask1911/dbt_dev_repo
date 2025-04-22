@@ -12,3 +12,6 @@ sources:
           - name: ORDER_DATE
       - name: customers
       - name: items
+      - name: orders
+
+      - name: clicks
